@@ -6,4 +6,16 @@ import { Component } from '@angular/core';
   styleUrl: './menu-component.css',
   templateUrl: './menu-component.html',
 })
-export class MenuComponent {}
+export class MenuComponent {
+    constructor(_coche: Coche){
+
+    }
+
+    ngOnInit(): void {
+        // Initialization logic here
+      this._activeroute.params.subscribe((parametros: Params=>{
+        // Do something with the parameters
+      }))
+      }
+
+}
