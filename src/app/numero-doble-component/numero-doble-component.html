@@ -1,5 +1,12 @@
 <h1>Doble parametros </h1>
 
+@for (item of [].constructor(3); track $index) {
+    <a [routerLink]="['/numero',$index+5]">
+        Doble{{$index +5 }}
+    </a>
+
+}
+
 <button (click)="volver()">Volver</button>
 <button (click)="redirect(88)">Doble de 88</button>
 <button (click)="redirect(67)">Doble de 67</button>
