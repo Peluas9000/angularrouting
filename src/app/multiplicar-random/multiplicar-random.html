@@ -1,0 +1,19 @@
+
+<h1>Random Multiplicar</h1>
+
+<p>Tabla del {{ numero }}</p>
+
+@for (numeroRandom of numerosRandom; track $index) {
+    <a [routerLink]="['/tabla', numeroRandom]">
+        Tabla del {{ numeroRandom }}
+    </a>
+}
+
+<table>
+    @for (fila of filas; track $index) {
+        <tr>
+            <td>{{ numero }} x {{ $index + 1 }} =</td>
+            <td>{{ numero * ($index + 1) }}</td>
+        </tr>
+    }
+</table>
