@@ -14,4 +14,11 @@
     <li>
         <a [routerLink]="['/numero/7']">Doble de 7</a>
     </li>  
+
+    @for (item of [].constructor(3); track $index) {
+    <a [routerLink]="['/numero',$index+5]">
+        Doble{{$index +5 }}
+    </a>
+
+}
 </ul>
