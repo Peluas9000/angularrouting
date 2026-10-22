@@ -7,7 +7,8 @@ import { Component } from '@angular/core';
   templateUrl: './menu-component.html',
 })
 export class MenuComponent {
-    constructor(_coche: Coche){
+ 
+  /*  constructor(_coche: Coche){
 
     }
 
@@ -17,5 +18,6 @@ export class MenuComponent {
         // Do something with the parameters
       }))
       }
+*/
 
 }
