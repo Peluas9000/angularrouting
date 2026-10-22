@@ -16,8 +16,7 @@ const appRoutes:Routes=[
     {path:"numero",component:NumeroDobleComponent},
     {path:"numero/:doble",component:NumeroDobleComponent},
     {path:"**",component:NotFoundComponent}
-    
-];
+    ];
 
 export const appRoutingProviders:any[]=[]
 export const routing:ModuleWithProviders<any>=

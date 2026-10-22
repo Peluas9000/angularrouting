@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {ActivatedRoute,Params} from "@angular/router";
+import {ActivatedRoute,Params, Router} from "@angular/router";
 @Component({
   selector: 'app-numero-doble-component',
   standalone: false,
@@ -12,10 +12,17 @@ export class NumeroDobleComponent implements OnInit{
 public doble!: number;
 public numero!: number;
 
-  constructor(private _activatedRoute: ActivatedRoute) { 
-    this.doble=0;
+  constructor(private _activatedRoute: ActivatedRoute,private _router:Router) { 
+     this.doble=0;
     
+  }
 
+  redirect(num:number){
+    this._router.navigate(["/numero", num]);
+  }
+
+  volver(){
+    this._router.navigate(["/"]);
   }
 
   ngOnInit(): void {
